@@ -1,0 +1,31 @@
+PODS:
+  - BeamMusicPlayerViewController (HEAD based on 0.1.0):
+    - BeamMusicPlayerViewController/MediaPlayer
+    - OBSlider (~> 1.1)
+  - BeamMusicPlayerViewController/MediaPlayer (HEAD based on 0.1.0):
+    - OBSlider (~> 1.1)
+  - FlatUIKit (HEAD based on 1.0)
+  - MarqueeLabel (HEAD based on 1.1.0)
+  - MKNetworkKit (HEAD based on 0.87):
+    - Reachability (~> 3.1.0)
+  - OBSlider (1.1.0)
+  - RaptureXML (HEAD based on 1.0.1)
+  - Reachability (3.1.1)
+
+DEPENDENCIES:
+  - BeamMusicPlayerViewController (HEAD)
+  - FlatUIKit (HEAD)
+  - MarqueeLabel (HEAD)
+  - MKNetworkKit (HEAD)
+  - RaptureXML (HEAD)
+
+SPEC CHECKSUMS:
+  BeamMusicPlayerViewController: b7c9f5058aceb7306958ed89f822024f673217ab
+  FlatUIKit: 3d2c6375ed741a8e8ffe663a3c1fe52d84309f04
+  MarqueeLabel: de7ab41b255c28f6c3319697119e9fb5ddb9d427
+  MKNetworkKit: f174100f92473012138b6b1c3040266af8d43a14
+  OBSlider: 1eae1ad6fea0af687f7dde0366003044c4ba3d27
+  RaptureXML: ef017fda62eb95c60300108366d1f0cd0c28cbd4
+  Reachability: 2be6bc2fd2bd31d97f5db33e75e4b29c79e95883
+
+COCOAPODS: 0.25.0

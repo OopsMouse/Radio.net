@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Radio.net.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2EAE145117433ABD00C6600B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2EAE147217433ABD00C6600B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2ECDD4F21736B9DE00AD024C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2ECDD5181736B9DE00AD024C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2EEB26881745379400FBC233</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2EEB26A91745379400FBC233</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

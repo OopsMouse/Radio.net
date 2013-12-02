@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EAE143C174000A500C6600B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAE143B174000A500C6600B /* CoreMotion.framework */; };
+		2EAE143E17405F2C00C6600B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAE143D17405F2C00C6600B /* AudioToolbox.framework */; };
+		2EAE144B1742B11B00C6600B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAE144A1742B11B00C6600B /* MediaPlayer.framework */; };
+		2EAE144D1742B12100C6600B /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAE144C1742B12100C6600B /* CoreAudio.framework */; };
+		2EBFD40C17489F39004F765D /* SNVolumeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBFD40B17489F39004F765D /* SNVolumeSlider.m */; };
+		2EBFD40F17489FBD004F765D /* SNRadioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBFD40E17489FBD004F765D /* SNRadioPlayerViewController.m */; };
+		2EBFD4151748A3BF004F765D /* sample-cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EBFD4141748A3BF004F765D /* sample-cover.jpg */; };
+		2EBFD4181748F64F004F765D /* SNRadioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBFD4171748F64F004F765D /* SNRadioPlayer.m */; };
+		2ECDD4F71736B9DE00AD024C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECDD4F61736B9DE00AD024C /* UIKit.framework */; };
+		2ECDD4F91736B9DE00AD024C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECDD4F81736B9DE00AD024C /* Foundation.framework */; };
+		2ECDD4FB1736B9DE00AD024C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECDD4FA1736B9DE00AD024C /* CoreGraphics.framework */; };
+		2ECDD5011736B9DE00AD024C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2ECDD4FF1736B9DE00AD024C /* InfoPlist.strings */; };
+		2ECDD5031736B9DE00AD024C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECDD5021736B9DE00AD024C /* main.m */; };
+		2ECDD5071736B9DE00AD024C /* SNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECDD5061736B9DE00AD024C /* SNAppDelegate.m */; };
+		2ECDD5091736B9DE00AD024C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ECDD5081736B9DE00AD024C /* Default.png */; };
+		2ECDD50B1736B9DE00AD024C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ECDD50A1736B9DE00AD024C /* Default@2x.png */; };
+		2ECDD50D1736B9DE00AD024C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ECDD50C1736B9DE00AD024C /* Default-568h@2x.png */; };
+		2ECDD5101736B9DE00AD024C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ECDD50E1736B9DE00AD024C /* MainStoryboard.storyboard */; };
+		2ECDD51B1736B9DE00AD024C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECDD51A1736B9DE00AD024C /* SenTestingKit.framework */; };
+		2ECDD51C1736B9DE00AD024C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECDD4F61736B9DE00AD024C /* UIKit.framework */; };
+		2ECDD51D1736B9DE00AD024C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECDD4F81736B9DE00AD024C /* Foundation.framework */; };
+		2ECDD5251736B9DE00AD024C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2ECDD5231736B9DE00AD024C /* InfoPlist.strings */; };
+		2ECDD5281736B9DE00AD024C /* Radio_netTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECDD5271736B9DE00AD024C /* Radio_netTests.m */; };
+		2ECDD5331736C3B200AD024C /* SNRadioCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECDD5321736C3B200AD024C /* SNRadioCategoriesViewController.m */; };
+		2ECDD5361736C92200AD024C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECDD5341736C8DC00AD024C /* ImageIO.framework */; };
+		2EEFECB8173EB1B400C15C38 /* SNRadioCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEFECB7173EB1B400C15C38 /* SNRadioCategory.m */; };
+		2EEFECBB173EB82B00C15C38 /* SNRadioStationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEFECBA173EB82B00C15C38 /* SNRadioStationsViewController.m */; };
+		2EEFECBE173EBDCC00C15C38 /* SNRadioStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEFECBD173EBDCC00C15C38 /* SNRadioStation.m */; };
+		2EEFECC0173EC19100C15C38 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEFECBF173EC19100C15C38 /* QuartzCore.framework */; };
+		2EEFECD1173F9CDF00C15C38 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEFECD0173F9CDF00C15C38 /* AVFoundation.framework */; };
+		2EEFECD4173FCF8E00C15C38 /* SNRadioFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEFECD3173FCF8E00C15C38 /* SNRadioFavoritesViewController.m */; };
+		2EEFECD6173FD33600C15C38 /* radio.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEFECD5173FD33600C15C38 /* radio.png */; };
+		2EEFECD8173FD33D00C15C38 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEFECD7173FD33D00C15C38 /* star.png */; };
+		A8F54A20C7744966933E9066 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F31FBA321764E19A90745F4 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2ECDD51E1736B9DE00AD024C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ECDD4EB1736B9DE00AD024C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ECDD4F21736B9DE00AD024C;
+			remoteInfo = Radio.net;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F31FBA321764E19A90745F4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EAE143B174000A500C6600B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		2EAE143D17405F2C00C6600B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2EAE144A1742B11B00C6600B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2EAE144C1742B12100C6600B /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		2EBFD40A17489F39004F765D /* SNVolumeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNVolumeSlider.h; path = Radio.net/Library/SNVolumeSlider/SNVolumeSlider.h; sourceTree = SOURCE_ROOT; };
+		2EBFD40B17489F39004F765D /* SNVolumeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNVolumeSlider.m; path = Radio.net/Library/SNVolumeSlider/SNVolumeSlider.m; sourceTree = SOURCE_ROOT; };
+		2EBFD40D17489FBD004F765D /* SNRadioPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRadioPlayerViewController.h; sourceTree = "<group>"; };
+		2EBFD40E17489FBD004F765D /* SNRadioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNRadioPlayerViewController.m; sourceTree = "<group>"; };
+		2EBFD4141748A3BF004F765D /* sample-cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sample-cover.jpg"; sourceTree = "<group>"; };
+		2EBFD4161748F64F004F765D /* SNRadioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRadioPlayer.h; sourceTree = "<group>"; };
+		2EBFD4171748F64F004F765D /* SNRadioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNRadioPlayer.m; sourceTree = "<group>"; };
+		2ECDD4F31736B9DE00AD024C /* Radio.net.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radio.net.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ECDD4F61736B9DE00AD024C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2ECDD4F81736B9DE00AD024C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2ECDD4FA1736B9DE00AD024C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2ECDD4FE1736B9DE00AD024C /* Radio.net-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Radio.net-Info.plist"; sourceTree = "<group>"; };
+		2ECDD5001736B9DE00AD024C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2ECDD5021736B9DE00AD024C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2ECDD5041736B9DE00AD024C /* Radio.net-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Radio.net-Prefix.pch"; sourceTree = "<group>"; };
+		2ECDD5051736B9DE00AD024C /* SNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNAppDelegate.h; sourceTree = "<group>"; };
+		2ECDD5061736B9DE00AD024C /* SNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNAppDelegate.m; sourceTree = "<group>"; };
+		2ECDD5081736B9DE00AD024C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2ECDD50A1736B9DE00AD024C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2ECDD50C1736B9DE00AD024C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2ECDD50F1736B9DE00AD024C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2ECDD5191736B9DE00AD024C /* Radio.netTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Radio.netTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ECDD51A1736B9DE00AD024C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2ECDD5221736B9DE00AD024C /* Radio.netTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Radio.netTests-Info.plist"; sourceTree = "<group>"; };
+		2ECDD5241736B9DE00AD024C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2ECDD5261736B9DE00AD024C /* Radio_netTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Radio_netTests.h; sourceTree = "<group>"; };
+		2ECDD5271736B9DE00AD024C /* Radio_netTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Radio_netTests.m; sourceTree = "<group>"; };
+		2ECDD5311736C3B200AD024C /* SNRadioCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRadioCategoriesViewController.h; sourceTree = "<group>"; };
+		2ECDD5321736C3B200AD024C /* SNRadioCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNRadioCategoriesViewController.m; sourceTree = "<group>"; };
+		2ECDD5341736C8DC00AD024C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		2EEFECB6173EB1B400C15C38 /* SNRadioCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNRadioCategory.h; path = Models/SNRadioCategory.h; sourceTree = "<group>"; };
+		2EEFECB7173EB1B400C15C38 /* SNRadioCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNRadioCategory.m; path = Models/SNRadioCategory.m; sourceTree = "<group>"; };
+		2EEFECB9173EB82B00C15C38 /* SNRadioStationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRadioStationsViewController.h; sourceTree = "<group>"; };
+		2EEFECBA173EB82B00C15C38 /* SNRadioStationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNRadioStationsViewController.m; sourceTree = "<group>"; };
+		2EEFECBC173EBDCC00C15C38 /* SNRadioStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNRadioStation.h; path = Models/SNRadioStation.h; sourceTree = "<group>"; };
+		2EEFECBD173EBDCC00C15C38 /* SNRadioStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNRadioStation.m; path = Models/SNRadioStation.m; sourceTree = "<group>"; };
+		2EEFECBF173EC19100C15C38 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2EEFECD0173F9CDF00C15C38 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2EEFECD2173FCF8E00C15C38 /* SNRadioFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRadioFavoritesViewController.h; sourceTree = "<group>"; };
+		2EEFECD3173FCF8E00C15C38 /* SNRadioFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNRadioFavoritesViewController.m; sourceTree = "<group>"; };
+		2EEFECD5173FD33600C15C38 /* radio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio.png; sourceTree = "<group>"; };
+		2EEFECD7173FD33D00C15C38 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		3A83BD5C5098460399C9EA11 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2ECDD4F01736B9DE00AD024C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EAE143E17405F2C00C6600B /* AudioToolbox.framework in Frameworks */,
+				2EAE144D1742B12100C6600B /* CoreAudio.framework in Frameworks */,
+				2EAE144B1742B11B00C6600B /* MediaPlayer.framework in Frameworks */,
+				2EAE143C174000A500C6600B /* CoreMotion.framework in Frameworks */,
+				2EEFECD1173F9CDF00C15C38 /* AVFoundation.framework in Frameworks */,
+				2EEFECC0173EC19100C15C38 /* QuartzCore.framework in Frameworks */,
+				2ECDD5361736C92200AD024C /* ImageIO.framework in Frameworks */,
+				2ECDD4F71736B9DE00AD024C /* UIKit.framework in Frameworks */,
+				2ECDD4F91736B9DE00AD024C /* Foundation.framework in Frameworks */,
+				2ECDD4FB1736B9DE00AD024C /* CoreGraphics.framework in Frameworks */,
+				A8F54A20C7744966933E9066 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ECDD5151736B9DE00AD024C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECDD51B1736B9DE00AD024C /* SenTestingKit.framework in Frameworks */,
+				2ECDD51C1736B9DE00AD024C /* UIKit.framework in Frameworks */,
+				2ECDD51D1736B9DE00AD024C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EAE143F17414AFF00C6600B /* SNVolumeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				2EBFD40A17489F39004F765D /* SNVolumeSlider.h */,
+				2EBFD40B17489F39004F765D /* SNVolumeSlider.m */,
+			);
+			name = SNVolumeSlider;
+			path = AVVolumeSlider;
+			sourceTree = "<group>";
+		};
+		2ECDD4EA1736B9DE00AD024C = {
+			isa = PBXGroup;
+			children = (
+				2ECDD4FC1736B9DE00AD024C /* Radio.net */,
+				2ECDD5201736B9DE00AD024C /* Radio.netTests */,
+				2ECDD4F51736B9DE00AD024C /* Frameworks */,
+				2ECDD4F41736B9DE00AD024C /* Products */,
+				3A83BD5C5098460399C9EA11 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		2ECDD4F41736B9DE00AD024C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2ECDD4F31736B9DE00AD024C /* Radio.net.app */,
+				2ECDD5191736B9DE00AD024C /* Radio.netTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2ECDD4F51736B9DE00AD024C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE144C1742B12100C6600B /* CoreAudio.framework */,
+				2EAE144A1742B11B00C6600B /* MediaPlayer.framework */,
+				2EAE143D17405F2C00C6600B /* AudioToolbox.framework */,
+				2EAE143B174000A500C6600B /* CoreMotion.framework */,
+				2EEFECD0173F9CDF00C15C38 /* AVFoundation.framework */,
+				2EEFECBF173EC19100C15C38 /* QuartzCore.framework */,
+				2ECDD5341736C8DC00AD024C /* ImageIO.framework */,
+				2ECDD4F61736B9DE00AD024C /* UIKit.framework */,
+				2ECDD4F81736B9DE00AD024C /* Foundation.framework */,
+				2ECDD4FA1736B9DE00AD024C /* CoreGraphics.framework */,
+				2ECDD51A1736B9DE00AD024C /* SenTestingKit.framework */,
+				1F31FBA321764E19A90745F4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2ECDD4FC1736B9DE00AD024C /* Radio.net */ = {
+			isa = PBXGroup;
+			children = (
+				2ECDD5051736B9DE00AD024C /* SNAppDelegate.h */,
+				2ECDD5061736B9DE00AD024C /* SNAppDelegate.m */,
+				2ECDD50E1736B9DE00AD024C /* MainStoryboard.storyboard */,
+				2ECDD5311736C3B200AD024C /* SNRadioCategoriesViewController.h */,
+				2ECDD5321736C3B200AD024C /* SNRadioCategoriesViewController.m */,
+				2EEFECB9173EB82B00C15C38 /* SNRadioStationsViewController.h */,
+				2EEFECBA173EB82B00C15C38 /* SNRadioStationsViewController.m */,
+				2EEFECD2173FCF8E00C15C38 /* SNRadioFavoritesViewController.h */,
+				2EEFECD3173FCF8E00C15C38 /* SNRadioFavoritesViewController.m */,
+				2EBFD40D17489FBD004F765D /* SNRadioPlayerViewController.h */,
+				2EBFD40E17489FBD004F765D /* SNRadioPlayerViewController.m */,
+				2EEFECCC173F7C0200C15C38 /* Library */,
+				2EEFECB5173EB17500C15C38 /* Models */,
+				2ECDD4FD1736B9DE00AD024C /* Supporting Files */,
+			);
+			path = Radio.net;
+			sourceTree = "<group>";
+		};
+		2ECDD4FD1736B9DE00AD024C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EBFD4141748A3BF004F765D /* sample-cover.jpg */,
+				2EEFECD7173FD33D00C15C38 /* star.png */,
+				2EEFECD5173FD33600C15C38 /* radio.png */,
+				2ECDD4FE1736B9DE00AD024C /* Radio.net-Info.plist */,
+				2ECDD4FF1736B9DE00AD024C /* InfoPlist.strings */,
+				2ECDD5021736B9DE00AD024C /* main.m */,
+				2ECDD5041736B9DE00AD024C /* Radio.net-Prefix.pch */,
+				2ECDD5081736B9DE00AD024C /* Default.png */,
+				2ECDD50A1736B9DE00AD024C /* Default@2x.png */,
+				2ECDD50C1736B9DE00AD024C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2ECDD5201736B9DE00AD024C /* Radio.netTests */ = {
+			isa = PBXGroup;
+			children = (
+				2ECDD5261736B9DE00AD024C /* Radio_netTests.h */,
+				2ECDD5271736B9DE00AD024C /* Radio_netTests.m */,
+				2ECDD5211736B9DE00AD024C /* Supporting Files */,
+			);
+			path = Radio.netTests;
+			sourceTree = "<group>";
+		};
+		2ECDD5211736B9DE00AD024C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2ECDD5221736B9DE00AD024C /* Radio.netTests-Info.plist */,
+				2ECDD5231736B9DE00AD024C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EEFECB5173EB17500C15C38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2EBFD4161748F64F004F765D /* SNRadioPlayer.h */,
+				2EBFD4171748F64F004F765D /* SNRadioPlayer.m */,
+				2EEFECBC173EBDCC00C15C38 /* SNRadioStation.h */,
+				2EEFECBD173EBDCC00C15C38 /* SNRadioStation.m */,
+				2EEFECB6173EB1B400C15C38 /* SNRadioCategory.h */,
+				2EEFECB7173EB1B400C15C38 /* SNRadioCategory.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2EEFECCC173F7C0200C15C38 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE143F17414AFF00C6600B /* SNVolumeSlider */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2ECDD4F21736B9DE00AD024C /* Radio.net */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ECDD52B1736B9DE00AD024C /* Build configuration list for PBXNativeTarget "Radio.net" */;
+			buildPhases = (
+				E41C36EB2190473690D0AD0C /* Check Pods Manifest.lock */,
+				2ECDD4EF1736B9DE00AD024C /* Sources */,
+				2ECDD4F01736B9DE00AD024C /* Frameworks */,
+				2ECDD4F11736B9DE00AD024C /* Resources */,
+				38CCA185155D4A9D896E1BCF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Radio.net;
+			productName = Radio.net;
+			productReference = 2ECDD4F31736B9DE00AD024C /* Radio.net.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2ECDD5181736B9DE00AD024C /* Radio.netTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ECDD52E1736B9DE00AD024C /* Build configuration list for PBXNativeTarget "Radio.netTests" */;
+			buildPhases = (
+				2ECDD5141736B9DE00AD024C /* Sources */,
+				2ECDD5151736B9DE00AD024C /* Frameworks */,
+				2ECDD5161736B9DE00AD024C /* Resources */,
+				2ECDD5171736B9DE00AD024C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2ECDD51F1736B9DE00AD024C /* PBXTargetDependency */,
+			);
+			name = Radio.netTests;
+			productName = Radio.netTests;
+			productReference = 2ECDD5191736B9DE00AD024C /* Radio.netTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2ECDD4EB1736B9DE00AD024C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SN;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Noda Shimpei";
+				TargetAttributes = {
+					2ECDD4F21736B9DE00AD024C = {
+						DevelopmentTeam = 4Z8L43E6YH;
+					};
+				};
+			};
+			buildConfigurationList = 2ECDD4EE1736B9DE00AD024C /* Build configuration list for PBXProject "Radio.net" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2ECDD4EA1736B9DE00AD024C;
+			productRefGroup = 2ECDD4F41736B9DE00AD024C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2ECDD4F21736B9DE00AD024C /* Radio.net */,
+				2ECDD5181736B9DE00AD024C /* Radio.netTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2ECDD4F11736B9DE00AD024C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECDD5011736B9DE00AD024C /* InfoPlist.strings in Resources */,
+				2ECDD5091736B9DE00AD024C /* Default.png in Resources */,
+				2ECDD50B1736B9DE00AD024C /* Default@2x.png in Resources */,
+				2ECDD50D1736B9DE00AD024C /* Default-568h@2x.png in Resources */,
+				2ECDD5101736B9DE00AD024C /* MainStoryboard.storyboard in Resources */,
+				2EEFECD6173FD33600C15C38 /* radio.png in Resources */,
+				2EEFECD8173FD33D00C15C38 /* star.png in Resources */,
+				2EBFD4151748A3BF004F765D /* sample-cover.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ECDD5161736B9DE00AD024C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECDD5251736B9DE00AD024C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2ECDD5171736B9DE00AD024C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		38CCA185155D4A9D896E1BCF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E41C36EB2190473690D0AD0C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2ECDD4EF1736B9DE00AD024C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECDD5031736B9DE00AD024C /* main.m in Sources */,
+				2ECDD5071736B9DE00AD024C /* SNAppDelegate.m in Sources */,
+				2ECDD5331736C3B200AD024C /* SNRadioCategoriesViewController.m in Sources */,
+				2EEFECB8173EB1B400C15C38 /* SNRadioCategory.m in Sources */,
+				2EEFECBB173EB82B00C15C38 /* SNRadioStationsViewController.m in Sources */,
+				2EEFECBE173EBDCC00C15C38 /* SNRadioStation.m in Sources */,
+				2EEFECD4173FCF8E00C15C38 /* SNRadioFavoritesViewController.m in Sources */,
+				2EBFD40C17489F39004F765D /* SNVolumeSlider.m in Sources */,
+				2EBFD40F17489FBD004F765D /* SNRadioPlayerViewController.m in Sources */,
+				2EBFD4181748F64F004F765D /* SNRadioPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ECDD5141736B9DE00AD024C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECDD5281736B9DE00AD024C /* Radio_netTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2ECDD51F1736B9DE00AD024C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2ECDD4F21736B9DE00AD024C /* Radio.net */;
+			targetProxy = 2ECDD51E1736B9DE00AD024C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2ECDD4FF1736B9DE00AD024C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ECDD5001736B9DE00AD024C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2ECDD50E1736B9DE00AD024C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ECDD50F1736B9DE00AD024C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		2ECDD5231736B9DE00AD024C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ECDD5241736B9DE00AD024C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2ECDD5291736B9DE00AD024C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2ECDD52A1736B9DE00AD024C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2ECDD52C1736B9DE00AD024C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A83BD5C5098460399C9EA11 /* Pods.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Radio.net/Radio.net-Prefix.pch";
+				INFOPLIST_FILE = "Radio.net/Radio.net-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2ECDD52D1736B9DE00AD024C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A83BD5C5098460399C9EA11 /* Pods.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Radio.net/Radio.net-Prefix.pch";
+				INFOPLIST_FILE = "Radio.net/Radio.net-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2ECDD52F1736B9DE00AD024C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Radio.net.app/Radio.net";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Radio.net/Radio.net-Prefix.pch";
+				INFOPLIST_FILE = "Radio.netTests/Radio.netTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2ECDD5301736B9DE00AD024C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Radio.net.app/Radio.net";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Radio.net/Radio.net-Prefix.pch";
+				INFOPLIST_FILE = "Radio.netTests/Radio.netTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2ECDD4EE1736B9DE00AD024C /* Build configuration list for PBXProject "Radio.net" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ECDD5291736B9DE00AD024C /* Debug */,
+				2ECDD52A1736B9DE00AD024C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ECDD52B1736B9DE00AD024C /* Build configuration list for PBXNativeTarget "Radio.net" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ECDD52C1736B9DE00AD024C /* Debug */,
+				2ECDD52D1736B9DE00AD024C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ECDD52E1736B9DE00AD024C /* Build configuration list for PBXNativeTarget "Radio.netTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ECDD52F1736B9DE00AD024C /* Debug */,
+				2ECDD5301736B9DE00AD024C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2ECDD4EB1736B9DE00AD024C /* Project object */;
+}
